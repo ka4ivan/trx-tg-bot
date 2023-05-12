@@ -1,0 +1,71 @@
+from settings import db, Base
+
+
+class Achievement_model(db.Model):
+    __tablename__ = "achievement"
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True, unique=True)
+    user_id = db.Column(db.BigInteger, unique=True)
+    daily_bonus = db.Column(db.Integer, default='0')
+    c_daily_bonus = db.Column(db.Integer, default='0')
+    week_bonus = db.Column(db.Integer, default='0')
+    c_week_bonus = db.Column(db.Integer, default='0')
+    pay_trx = db.Column(db.Integer, default='0')
+    c_pay_trx = db.Column(db.Integer, default='0')
+    pay_trx_th = db.Column(db.Integer, default='0')
+    c_pay_trx_th = db.Column(db.Integer, default='0')
+    game_dice = db.Column(db.Integer, default='0')
+    c_game_dice = db.Column(db.Integer, default='0')
+    game_mine = db.Column(db.Integer, default='0')
+    c_game_mine = db.Column(db.Integer, default='0')
+    game_fifty = db.Column(db.Integer, default='0')
+    c_game_fifty = db.Column(db.Integer, default='0')
+    game_case = db.Column(db.Integer, default='0')
+    c_game_case = db.Column(db.Integer, default='0')
+    game_slot = db.Column(db.Integer, default='0')
+    c_game_slot = db.Column(db.Integer, default='0')
+    game_num = db.Column(db.Integer, default='0')
+    c_game_num = db.Column(db.Integer, default='0')
+    game_num_win_hun = db.Column(db.Integer, default='0')
+    c_game_num_win_hun = db.Column(db.Integer, default='0')
+    win_lot = db.Column(db.Integer, default='0')
+    c_win_lot = db.Column(db.Integer, default='0')
+    c_f_ref = db.Column(db.Integer, default='0')
+    c_s_ref = db.Column(db.Integer, default='0')
+    c_a_ref = db.Column(db.Integer, default='0')
+
+
+class Achievement_base(Base):
+    __tablename__ = "achievement"
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True, unique=True)
+    user_id = db.Column(db.BigInteger, unique=True)
+    daily_bonus = db.Column(db.Integer, default='0')
+    c_daily_bonus = db.Column(db.Integer, default='0')
+    week_bonus = db.Column(db.Integer, default='0')
+    c_week_bonus = db.Column(db.Integer, default='0')
+    pay_trx = db.Column(db.Integer, default='0')
+    c_pay_trx = db.Column(db.Integer, default='0')
+    pay_trx_th = db.Column(db.Integer, default='0')
+    c_pay_trx_th = db.Column(db.Integer, default='0')
+    game_dice = db.Column(db.Integer, default='0')
+    c_game_dice = db.Column(db.Integer, default='0')
+    game_mine = db.Column(db.Integer, default='0')
+    c_game_mine = db.Column(db.Integer, default='0')
+    game_fifty = db.Column(db.Integer, default='0')
+    c_game_fifty = db.Column(db.Integer, default='0')
+    game_case = db.Column(db.Integer, default='0')
+    c_game_case = db.Column(db.Integer, default='0')
+    game_slot = db.Column(db.Integer, default='0')
+    c_game_slot = db.Column(db.Integer, default='0')
+    game_num = db.Column(db.Integer, default='0')
+    c_game_num = db.Column(db.Integer, default='0')
+    game_num_win_hun = db.Column(db.Integer, default='0')
+    c_game_num_win_hun = db.Column(db.Integer, default='0')
+    win_lot = db.Column(db.Integer, default='0')
+    c_win_lot = db.Column(db.Integer, default='0')
+    c_f_ref = db.Column(db.Integer, default='0')
+    c_s_ref = db.Column(db.Integer, default='0')
+    c_a_ref = db.Column(db.Integer, default='0')
+
+
