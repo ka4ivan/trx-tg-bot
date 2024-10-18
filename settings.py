@@ -27,9 +27,9 @@ load_dotenv(dotenv_path=ENV_PATH)
 
 
 DATABASE = {
-    "NAME": "bot_back",
+    "NAME": "",
     "USER": "postgres",
-    "PASSWORD": "covers00",
+    "PASSWORD": "",
     "HOST": "localhost",
 }
 

@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher
 from language_middleware import setup_middleware
 
 
-API_TOKEN = "5910817033:AAGhbwBrBMgAexaMeCLRHQPjzHrxYPk1R7c"
+API_TOKEN = ""
 
 
 admins = [
